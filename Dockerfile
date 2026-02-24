@@ -1,8 +1,8 @@
 FROM python:3.10-slim
 
-#파이썬 출력 버퍼링 해제(실시간 로그 출력) + .pyc 파일 생성 방지
-ENV PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1
+# 파이썬 출력 버퍼링 해제(로그 바로 보이게) + .pyc 생성 방지
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 

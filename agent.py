@@ -1,4 +1,4 @@
-import os
+import os, time
 from langchain_google_genai import ChatGoogleGenerativeAI
 # 라이브러리 호출
 
